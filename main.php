@@ -1,10 +1,9 @@
-<?php
-function is_num($S) {
 
-if (preg_match('/^[a-z]+([0-9]{3})$/', $S)) {
+<?php
+$S = '123';
+if (preg_match('/^([0-9]{3})$/', $S)) {
     echo ($S*2);
-} else {
+  } else {
    echo "error";
- }
-}
- ?>
+  }
+?>
